@@ -14,7 +14,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/mobile.css" />
 
     <title>Document</title>
   </head>
@@ -22,7 +22,7 @@
   <body>
     <!-- Logo site + navigation -->
 
-    <header class="page-header">
+     <header class="page-header">
       <div class="container header-container">
         <nav class="page-nav">
           <a class="link-logo" href="./index.html"
@@ -39,6 +39,7 @@
         </nav>
 
         <!-- Address -->
+
         <address class="contacts">
           <ul class="page-contacts">
             <li>
@@ -52,14 +53,88 @@
               >
             </li>
           </ul>
-        </address>
+        </address> 
+       <button type="button" class="mobile-menu-open">
+          <svg class="mobile-menu-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-btn-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu">
+        <div>
+          <button type="button" class="mobile-menu-close">
+            <svg class="mobile-menu-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-black"></use>
+            </svg>
+          </button>
+          <nav>
+            <ul class="mobile-menu-nav">
+              <li>
+                <a class="mobile-menu-link mobile-menu-color" href="./index.html"
+                  >Studio</a
+                >
+              </li>
+              <li><a class="mobile-menu-link" href="">Portfolio</a></li>
+              <li><a class="mobile-menu-link" href="">Contacts</a></li>
+            </ul>
+          </nav>
+        </div> 
+
+        <div>
+          <address class="mobile-contacts">
+            <ul class="mobail-page-contacts">
+              <li class="mobile-contacts-item">
+                <a class="mobile-contacts-link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mobile-contacts-item">
+                <a class="mobile-contacts-link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              
+            </ul>
+          </address>
+
+          <ul class="mobile-social-links">
+            <li class="mobile-social-item">
+              <a class="mobile-links" href="">
+                <svg class="mobile-social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram-2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-social-item">
+              <a class="mobile-links" href=""
+                ><svg class="mobile-social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-social-item">
+              <a class="mobile-links" href=""
+                ><svg class="mobile-social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-social-item">
+              <a class="mobile-links" href=""
+                ><svg class="mobile-social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin-1"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
     <!--Section -->
     <main>
-      <section class="main">
-        <!--Section -one -->
+      <section class="main"> 
+                <!--Section -one -->
         <div class="container">
           <h1 class="main-text">Effective Solutions for Your Business</h1>
           <button class="main-btn" type="button">Order Service</button>
@@ -124,15 +199,21 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> 
       <!--Section 3 Our Team-->
-      <section class="card">
+       <section class="card">
         <div class="container">
           <h2 class="card-title">Our Team</h2>
 
           <ul class="card-item">
             <li class="card-name-item">
-              <img src="./images/img_mark.jpg" alt="photo-mark" width="264" />
+              <img
+                class="card-img"
+                srcset="./images/mark-mob@1x.jpg, ./images/mark-mob@2x"
+                src="./images/img_mark.jpg"
+                alt="photo-mark"
+                width="264"
+              />
               <div class="card-name-item-item">
                 <h3 class="card-name">Mark Guerrero</h3>
                 <p class="card-name-text">Product Designer</p>
@@ -293,7 +374,7 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> 
 
       <!--Section 4 Our Portfolio-->
 
@@ -305,6 +386,7 @@
             <li class="portfolio-item-card">
               <div class="portfolio-img">
                 <img
+                  srcset="./images/imgbanking-mob@1x.jpg"
                   src="./images/imgbanking-app.jpg"
                   alt="banking-app"
                   width="360"
@@ -424,10 +506,10 @@
           </ul>
         </div>
       </section>
-    </main>
+    </main> 
 
     <!-- Footer -->
-    <footer class="footer">
+     <footer class="footer">
       <div class="footer-list container">
         <div class="footer-logo">
           <a class="link-logo-footer" href="./index.html"
@@ -492,10 +574,10 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> 
 
     <!-- Modal -->
-    <div class="backdrop is-open">
+     <div class="backdrop is-open">
       <div class="modal">
         <button class="close-btn" type="button">
           <svg class="close-icon" width="8" height="8">
@@ -510,7 +592,7 @@
             <div class="form-input">
               <input
                 class="form-icon-input"
-                type="text"
+                type="name"
                 name="user-name"
                 id="user-name"
               />
@@ -524,9 +606,9 @@
             <div class="form-input">
               <input
                 class="form-icon-input"
-                type="text"
-                name="phone"
-                id="phone"
+                type="tel"
+                name="user-phone"
+                id="user-phone"
               />
               <svg class="form-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-phone-black-18dp"></use>
@@ -538,9 +620,9 @@
             <div class="form-input">
               <input
                 class="form-icon-input"
-                type="text"
-                name="email"
-                id="email"
+                type="email"
+                name="user-email"
+                id="user-email"
               />
               <svg class="form-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-Vector"></use>
@@ -581,4 +663,4 @@
       </div>
     </div>
   </body>
-</html>
+</html> 
